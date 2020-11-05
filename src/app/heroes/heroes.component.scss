@@ -1,0 +1,48 @@
+.container{
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+   
+    .list_item{
+        margin: 30px;
+        border-radius: 4px;
+        list-style: none;
+        cursor: pointer;
+        transition: all 300ms;
+
+        &:hover{
+            .name{
+                background-color: rgb(94, 134, 13);
+                color: #fff
+            }
+            .badge{
+                background-color: rgb(106, 26, 182);
+            }
+        }
+
+        .badge{
+            background-color: blueviolet;
+            padding: 10px;
+            color: white;
+            border-radius: 6px 0 0 6px;
+        }
+
+        .name{
+            padding: 10px;
+            background-color: yellowgreen;
+            border-radius: 0 6px 6px 0;
+        }
+    }
+
+    .selected{
+        .name{
+            background-color: rgb(94, 134, 13);
+            color: #fff
+        }
+        .badge{
+            background-color: rgb(106, 26, 182);
+        }
+    }
+}
